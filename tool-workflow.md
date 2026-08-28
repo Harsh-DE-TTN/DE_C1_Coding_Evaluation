@@ -60,9 +60,14 @@ Master index: [ai-prompts/documentation.md](ai-prompts/documentation.md)
 | Step | Script | Runtime |
 | ---- | ------ | ------- |
 | Generate CSVs | `src/data_generation/generate_sample_data.py` | Local Python |
-| Bronze ingest | `src/bronze/ingest_all.py` | Databricks |
-| Silver validate | `src/silver/create_silver_tables.py` | Databricks |
-| Gold aggregate | `src/gold/create_gold_tables.py` | Databricks |
+| **Full ETL** | `src/run_full_etl_pipeline.py` | All stages |
+| Data generation | `src/data_generation/generate_sample_data.py` | Stage 1 |
+| Bronze customers | `src/bronze/01_ingest_customers.py` | Stage 2 |
+| Bronze orders | `src/bronze/02_ingest_orders.py` | Stage 3 |
+| Bronze products | `src/bronze/03_ingest_products.py` | Stage 4 |
+| Silver validate | `src/silver/create_silver_tables.py` | Stage 5 |
+| Gold aggregate | `src/gold/create_gold_tables.py` | Stage 6 |
+| Dashboard queries | `src/dashboard/run_dashboard_queries.py` | Stage 7 |
 | Dashboard SQL | `src/dashboard/dashboard_queries.sql` | Databricks SQL |
 
 ---

@@ -31,11 +31,7 @@ Three source entities with FK relationships:
 
 ## Bronze Layer Design
 
-- **Location:** `src/bronze/` (shared utilities in `ingest_all.py`)
-- **Input:** CSV files at `BRONZE_INPUT_PATH`
-- **Output:** `bronze.bronze_customers`, `bronze.bronze_orders`, `bronze.bronze_products`
-- **Transform:** Read CSV as strings, add metadata columns, write Delta with `overwrite`
-- **Runtime:** Databricks cluster only (local PySpark removed after classpath issues)
+- **Bronze:** one script per CSV — `01_ingest_customers.py`, `02_ingest_orders.py`, `03_ingest_products.py` (`ingest_all.py` = shared utilities only)
 
 ## Silver Layer Design
 
