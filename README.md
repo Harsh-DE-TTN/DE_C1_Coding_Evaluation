@@ -87,13 +87,38 @@ export BRONZE_INPUT_PATH="/Volumes/<catalog>/<schema>/<volume>/data"
 
 Run `database/schema.sql` in Databricks SQL.
 
-### 4. Run pipeline (Databricks, in order)
+### 4. Run full ETL pipeline (Databricks)
+
+**All stages in one command** (each Bronze CSV ingested separately):
+
+```python
+import os
+os.environ["BRONZE_INPUT_PATH"] = "/Volumes/<catalog>/<schema>/<volume>/data"
+os.environ["DASHBOARD_MATERIALIZE"] = "true"  # optional
+%run ./src/run_full_etl_pipeline
+```
+
+**Or run Bronze one file at a time:**
 
 ```bash
-python src/bronze/ingest_all.py
-python src/silver/create_silver_tables.py
-python src/gold/create_gold_tables.py
+python src/bronze/01_ingest_customers.py
+python src/bronze/02_ingest_orders.py
+python src/bronze/03_ingest_products.py
 ```
+
+Or:
+
+```bash
+python src/run_full_etl_pipeline.py
+```
+
+**Medallion only** (bronze → silver → gold, CSVs must already exist):
+
+```bash
+python src/run_medallion_pipeline.py
+```
+
+See [database/job-setup-notes.md](database/job-setup-notes.md) for multi-task Databricks Job setup.
 
 ### 5. Dashboard
 

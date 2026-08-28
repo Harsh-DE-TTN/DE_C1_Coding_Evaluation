@@ -7,6 +7,7 @@ Outputs: data/customers.csv, data/products.csv, data/orders.csv
 
 from __future__ import annotations
 
+import os
 import random
 import sys
 from dataclasses import dataclass
@@ -58,9 +59,21 @@ PRODUCT_CATEGORIES = (
     "Office Supplies",
 )
 
-# Repo paths
+# Repo paths — override with ETL_DATA_OUTPUT_PATH or BRONZE_INPUT_PATH on Databricks
 REPO_ROOT = Path(__file__).resolve().parents[2]
-DATA_DIR = REPO_ROOT / "data"
+DEFAULT_DATA_DIR = REPO_ROOT / "data"
+
+
+def resolve_output_dir() -> Path:
+    """Directory for generated CSV files (defaults to repo data/)."""
+    for key in ("ETL_DATA_OUTPUT_PATH", "BRONZE_INPUT_PATH"):
+        value = os.environ.get(key)
+        if value:
+            return Path(value)
+    return DEFAULT_DATA_DIR
+
+
+DATA_DIR = DEFAULT_DATA_DIR
 
 CUSTOMER_COLUMNS = [
     "customer_id",
@@ -588,8 +601,9 @@ def _write_csv(df: pd.DataFrame, path: Path) -> None:
     df.to_csv(path, index=False, na_rep="")
 
 
-def main() -> int:
-    """Generate datasets, write CSVs, validate, and print summary."""
+def run_data_generation(output_dir: Path | None = None) -> int:
+    """Generate datasets, write CSVs, validate, and print summary. Returns exit code."""
+    out = output_dir or resolve_output_dir()
     rng, fake = _setup_random(RANDOM_SEED)
     plan = build_issue_plan(rng)
 
@@ -601,16 +615,22 @@ def main() -> int:
         orders = generate_orders(rng, fake, customers, products)
         orders = inject_order_quality_issues(orders, plan)
 
-        _write_csv(customers, DATA_DIR / "customers.csv")
-        _write_csv(products, DATA_DIR / "products.csv")
-        _write_csv(orders, DATA_DIR / "orders.csv")
+        _write_csv(customers, out / "customers.csv")
+        _write_csv(products, out / "products.csv")
+        _write_csv(orders, out / "orders.csv")
 
         metrics = validate_generated_data(customers, products, orders, plan)
+        metrics["output_dir"] = str(out)
         print_generation_summary(metrics)
         return 0 if metrics["valid"] else 1
     except Exception as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 1
+
+
+def main() -> int:
+    """CLI entry point."""
+    return run_data_generation()
 
 
 if __name__ == "__main__":

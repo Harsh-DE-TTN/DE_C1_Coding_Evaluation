@@ -42,9 +42,15 @@ Set `BRONZE_INPUT_PATH` to the directory containing these files.
 
 ### 4. Run pipeline
 
+**Full ETL (single script):**
+
 ```text
-ingest_all.py  →  create_silver_tables.py  →  create_gold_tables.py
+src/run_full_etl_pipeline.py
 ```
+
+Stages: data generation → bronze → silver → gold → dashboard queries.
+
+**Multi-task Databricks Job (5 tasks):** see `database/job-setup-notes.md` and `database/databricks_job.json`.
 
 ### 5. Verify
 

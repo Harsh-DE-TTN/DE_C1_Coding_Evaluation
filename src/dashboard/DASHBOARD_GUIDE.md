@@ -34,6 +34,16 @@ SQL queries for Databricks SQL Dashboard visualizations. Reads **Gold tables onl
 
 ## How to use in Databricks SQL
 
+**Automated (recommended):** included in `src/run_full_etl_pipeline.py` stage 5, or run standalone:
+
+```python
+%run ./src/dashboard/run_dashboard_queries
+```
+
+Set `DASHBOARD_MATERIALIZE=true` to persist results as `gold.dashboard_*` tables.
+
+**Manual:**
+
 1. Open **SQL** → **SQL Editor** in Databricks workspace.
 2. Copy one query block from `dashboard_queries.sql`.
 3. Run against a SQL Warehouse with access to the `gold` schema.

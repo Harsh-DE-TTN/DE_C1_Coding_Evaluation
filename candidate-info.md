@@ -15,5 +15,4 @@
 
 1. **Local:** `pip install faker pandas` → run `src/data_generation/generate_sample_data.py` (or use existing `data/*.csv`).
 2. **Databricks:** Upload CSVs, run `database/schema.sql`, set `BRONZE_INPUT_PATH`.
-3. **Pipeline:** `ingest_all.py` → `create_silver_tables.py` → `create_gold_tables.py`.
-4. **Dashboard:** Run queries from `src/dashboard/dashboard_queries.sql`.
+3. **Pipeline:** `src/run_full_etl_pipeline.py` (data gen → bronze → silver → gold → dashboard).

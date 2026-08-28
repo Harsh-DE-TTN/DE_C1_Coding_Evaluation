@@ -440,4 +440,13 @@ def run_ingest_all() -> int:
 
 
 if __name__ == "__main__":
-    sys.exit(run_ingest_all())
+    print(
+        "ingest_all.py provides shared Bronze utilities only.\n"
+        "Run separate ingest scripts instead:\n"
+        "  python src/bronze/01_ingest_customers.py\n"
+        "  python src/bronze/02_ingest_orders.py\n"
+        "  python src/bronze/03_ingest_products.py\n"
+        "Or run the full ETL: python src/run_full_etl_pipeline.py",
+        file=sys.stderr,
+    )
+    sys.exit(1)
