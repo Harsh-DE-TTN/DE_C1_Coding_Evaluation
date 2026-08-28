@@ -1,0 +1,501 @@
+product_id,product_name,category,price,cost,stock_quantity,reorder_level
+1,What Consumer,Books,420.22,213.43,817,43
+2,Away Lose,Grocery,348.81,270.75,793,132
+3,Marriage Work,Office Supplies,308.95,147.72,221,45
+4,Image Local,Toys,415.75,284.16,1033,175
+5,Term Player,Office Supplies,465.95,352.22,1400,52
+6,Less Military,Clothing,222.95,165.04,49,9
+7,Because Wide,Sports & Outdoors,102.44,63.55,836,11
+8,Member Get,Automotive,206.19,162.67,1345,258
+9,Play Writer,Automotive,265.22,174.73,1158,17
+10,Store What,Clothing,357.35,298.42,167,29
+11,Economic Alone,Sports & Outdoors,404.13,274.16,1731,16
+12,Thousand Require,Beauty,91.53,66.80,1378,298
+13,Ahead Idea,Sports & Outdoors,280.32,197.94,97,24
+14,Camera Provide,Electronics,107.70,84.21,1819,189
+15,Lose Modern,Automotive,369.14,288.68,686,31
+16,Not Race,Electronics,395.71,191.14,1888,122
+17,Poor Think,Home & Kitchen,52.10,25.37,1830,374
+18,Fast Follow,Beauty,165.11,87.16,1953,105
+19,Especially Home,Home & Kitchen,395.40,241.03,88,20
+20,Under Time,Electronics,383.94,311.71,1617,173
+21,Begin Recognize,Automotive,386.38,300.97,438,65
+22,Treatment These,Electronics,107.88,50.95,55,10
+23,Quickly Meet,Electronics,354.76,224.85,1833,413
+24,Staff Yes,Grocery,408.95,330.67,1392,10
+25,Although Discuss,Clothing,413.81,293.07,678,87
+26,Ask Degree,Office Supplies,54.13,34.10,1825,172
+27,In Short,Office Supplies,238.94,134.79,439,64
+28,Serious Mrs,Home & Kitchen,65.54,38.83,1476,144
+29,Mention Dog,Electronics,261.97,208.08,1249,188
+30,Teach Election,Office Supplies,468.77,216.97,27,6
+31,Teach Pick,Books,459.69,283.56,1518,128
+32,Bag Both,Sports & Outdoors,457.22,215.37,1527,176
+33,Go One,Beauty,84.52,59.64,115,25
+34,Statement Entire,Home & Kitchen,222.88,149.16,384,54
+35,Democrat Training,Office Supplies,322.31,212.20,1171,263
+36,Security Animal,Books,305.41,250.72,1939,144
+37,Build During,Clothing,114.83,77.59,442,56
+38,Whatever At,Automotive,254.17,195.72,1306,323
+39,Either Far,Sports & Outdoors,498.67,286.68,1364,124
+40,On Me,Electronics,384.16,287.30,1423,197
+41,Until Feeling,Clothing,188.49,85.64,773,60
+42,Couple Case,Grocery,364.84,285.71,1022,15
+43,Mind Expert,Home & Kitchen,165.80,107.77,193,27
+44,Space Past,Home & Kitchen,268.03,166.87,871,31
+45,West Political,Automotive,142.23,70.60,599,101
+46,Thank Dinner,Clothing,366.33,285.72,681,6
+47,Generation Check,Beauty,18.63,11.13,1683,220
+48,Fish Score,Electronics,398.44,241.62,793,34
+49,But Fill,Home & Kitchen,99.33,51.08,1794,254
+50,Drive Perform,Toys,183.32,146.75,1632,95
+51,Need Truth,Automotive,318.52,168.98,940,180
+52,Experience After,Grocery,84.69,66.70,295,21
+53,But Ago,Grocery,219.99,173.70,160,16
+54,Focus Wish,Books,77.86,52.41,502,77
+55,Republican Operation,Electronics,343.13,184.40,441,87
+56,Near Action,Clothing,92.55,52.96,809,29
+57,Local Focus,Grocery,147.17,101.35,1253,224
+58,Exist Next,Grocery,50.32,25.96,30,5
+59,Month Around,Beauty,216.44,148.05,174,26
+60,Brother Population,Books,202.04,158.40,1093,177
+61,Country Whether,Clothing,156.88,84.73,193,15
+62,Magazine Knowledge,Office Supplies,372.44,247.85,744,102
+63,Each Listen,Beauty,224.08,116.96,1271,315
+64,Second Professional,Beauty,271.38,180.98,1214,29
+65,Morning Include,Clothing,488.51,376.82,715,168
+66,Consider Voice,Electronics,203.29,131.84,813,75
+67,On Something,Home & Kitchen,100.55,45.49,718,162
+68,Seek Close,Clothing,104.74,73.88,905,146
+69,Son Free,Grocery,452.63,296.88,1974,489
+70,Air Prove,Books,68.39,41.71,997,61
+71,Popular Product,Electronics,241.84,174.69,555,37
+72,Positive Upon,Toys,301.00,209.01,407,38
+73,Unit Structure,Books,177.80,104.39,792,192
+74,Fire Certain,Clothing,491.21,411.97,167,17
+75,Experience Should,Automotive,45.78,37.04,685,93
+76,Responsibility Available,Clothing,194.74,147.13,152,26
+77,Follow Hear,Beauty,168.51,134.58,1581,152
+78,Court Their,Home & Kitchen,403.49,213.16,1621,362
+79,Yard Past,Toys,140.44,89.02,343,20
+80,Usually True,Toys,169.78,86.61,877,10
+81,Top Whose,Beauty,7.75,4.05,180,28
+82,Over Per,Electronics,233.17,181.68,1071,178
+83,Response That,Books,87.02,58.59,1533,262
+84,Product Past,Home & Kitchen,287.25,132.55,504,99
+85,Because Environmental,Electronics,418.97,220.52,1418,152
+86,Cup Account,Home & Kitchen,384.13,321.46,1864,365
+87,Start As,Clothing,10.97,8.79,555,44
+88,Exist Ready,Clothing,460.53,320.85,452,104
+89,Allow Involve,Office Supplies,21.08,12.89,664,158
+90,Cup Toward,Beauty,311.23,161.31,1308,127
+91,Nearly Serious,Automotive,144.99,102.90,1353,24
+92,Office Keep,Beauty,159.89,72.06,1264,129
+93,Whom Significant,Beauty,41.75,27.77,38,5
+94,Ready Performance,Books,477.90,338.39,836,26
+95,Rise Serious,Toys,469.45,328.53,1137,240
+96,Mouth Foot,Sports & Outdoors,343.10,189.93,277,42
+97,Let Full,Office Supplies,94.82,49.87,1959,282
+98,Parent Guess,Automotive,434.55,255.27,1227,89
+99,Begin Music,Beauty,11.78,9.92,20,5
+100,Indeed Group,Books,207.53,142.39,956,25
+101,Suddenly Write,Books,172.42,101.57,1015,135
+102,Human Break,Office Supplies,201.73,158.56,102,18
+103,Entire Age,Grocery,242.08,170.78,560,24
+104,There Sometimes,Toys,357.71,247.37,261,63
+105,Current Sport,Home & Kitchen,84.83,61.29,667,53
+106,General Expert,Office Supplies,259.81,130.39,1380,184
+107,Rate Everyone,Electronics,475.37,314.88,1289,246
+108,Ago Talk,Toys,110.86,87.03,521,28
+109,Team Interview,Toys,86.90,55.48,1695,238
+110,Tree Ahead,Sports & Outdoors,226.58,104.31,803,136
+111,Against Great,Books,207.85,102.37,278,50
+112,Difference Create,Clothing,358.42,295.61,1319,34
+113,Heavy Onto,Home & Kitchen,149.70,108.42,1406,44
+114,Source Wonder,Toys,452.72,261.55,1802,128
+115,Water Perhaps,Home & Kitchen,233.42,189.04,759,160
+116,Until Year,Sports & Outdoors,67.19,53.85,49,9
+117,Many Third,Toys,208.72,173.04,1877,83
+118,Fine Not,Automotive,356.22,235.76,47,6
+119,Stuff Instead,Sports & Outdoors,65.44,40.62,1800,193
+120,Price Minute,Clothing,353.27,233.11,1956,359
+121,Authority Color,Toys,460.36,304.16,59,7
+122,Baby Account,Sports & Outdoors,46.30,36.44,453,91
+123,Key Price,Home & Kitchen,313.01,183.86,219,49
+124,Well Sign,Home & Kitchen,424.81,303.73,1129,187
+125,Newspaper These,Home & Kitchen,384.07,319.00,1111,39
+126,Develop Home,Clothing,298.87,180.62,1649,178
+127,Make Local,Electronics,247.73,178.96,1588,14
+128,Election Per,Automotive,187.02,107.73,991,213
+129,True Left,Sports & Outdoors,186.70,88.21,1066,76
+130,Watch One,Books,321.91,190.60,890,127
+131,Develop Production,Home & Kitchen,297.09,147.28,1409,39
+132,Event Become,Sports & Outdoors,364.85,181.72,551,14
+133,Cultural Tonight,Beauty,117.51,56.27,947,51
+134,Program Light,Home & Kitchen,164.86,87.49,1868,78
+135,Area Nature,Sports & Outdoors,198.70,139.89,1598,358
+136,Professional Eight,Automotive,437.69,368.54,655,48
+137,Final Health,Electronics,326.13,156.41,521,99
+138,Me Time,Clothing,406.94,217.81,1999,302
+139,Difference Account,Grocery,161.80,107.30,27,5
+140,Line Board,Clothing,328.59,152.07,1907,262
+141,Body Article,Beauty,79.32,50.18,1171,151
+142,Close Generation,Toys,320.08,195.07,11,5
+143,Similar Scene,Clothing,395.38,276.04,146,22
+144,Voice Check,Sports & Outdoors,411.80,232.45,1648,16
+145,Remember Piece,Office Supplies,496.23,233.37,758,103
+146,In Gun,Office Supplies,326.65,258.46,643,114
+147,Listen Religious,Sports & Outdoors,339.15,221.25,236,55
+148,Discuss Option,Toys,248.88,120.54,1535,140
+149,Line Early,Automotive,459.94,372.64,942,219
+150,Represent Deal,Automotive,46.69,26.31,1503,75
+151,Yourself Finish,Toys,34.24,23.69,517,82
+152,Baby Style,Electronics,28.18,15.04,1255,62
+153,List Skill,Electronics,227.48,121.39,585,71
+154,Spring Return,Toys,226.11,111.75,745,182
+155,Clearly Situation,Office Supplies,220.87,107.78,166,24
+156,Vote Seem,Grocery,461.99,306.35,1772,50
+157,Act Head,Books,424.56,229.77,1181,5
+158,Among Environmental,Home & Kitchen,128.25,108.51,1947,181
+159,Several Year,Home & Kitchen,43.69,27.30,1925,191
+160,Week Husband,Automotive,107.60,60.51,285,6
+161,His Level,Grocery,321.47,211.18,923,192
+162,Office Explain,Books,381.43,223.43,146,13
+163,Imagine Including,Beauty,249.16,208.31,320,54
+164,Ten Skin,Beauty,281.54,165.36,213,34
+165,With Human,Books,332.46,228.13,1060,230
+166,Charge Start,Automotive,172.65,133.75,1106,28
+167,Let Board,Toys,234.95,116.29,1861,298
+168,Democratic Attack,Home & Kitchen,394.66,295.48,1105,64
+169,Central Science,Office Supplies,212.70,135.58,1468,83
+170,Father Anyone,Office Supplies,458.39,345.75,1570,44
+171,Box Drop,Home & Kitchen,89.20,40.44,831,59
+172,Teacher Show,Electronics,312.47,220.92,1961,189
+173,Cover Industry,Office Supplies,410.45,251.45,804,58
+174,Guy Else,Automotive,373.75,208.55,1532,43
+175,Like Eat,Grocery,119.04,60.64,1172,52
+176,Woman Draw,Clothing,409.05,254.36,1366,105
+177,Wall Other,Sports & Outdoors,475.28,370.30,1487,334
+178,Toward Listen,Automotive,358.13,211.46,456,60
+179,Nor Hold,Automotive,263.37,118.52,140,9
+180,Approach Energy,Automotive,255.05,148.72,1385,303
+181,Yet Leg,Automotive,126.33,100.26,550,71
+182,Vote High,Electronics,260.24,117.16,422,43
+183,Couple Effort,Books,245.76,183.71,893,142
+184,Either Happy,Office Supplies,327.81,206.08,1975,445
+185,Hot Suggest,Office Supplies,461.43,360.56,1602,78
+186,Sometimes These,Toys,350.67,229.03,1452,103
+187,Reality Everybody,Books,435.67,273.71,1612,377
+188,Probably Poor,Books,390.95,250.75,1587,156
+189,Receive Create,Books,91.64,48.16,540,47
+190,Analysis Must,Home & Kitchen,464.17,256.74,1090,108
+191,Husband Major,Toys,437.98,361.52,7,5
+192,Section Generation,Toys,287.58,215.42,1471,91
+193,Already Buy,Toys,33.03,27.58,961,47
+194,Policy Edge,Beauty,46.64,32.03,560,71
+195,Deal Pull,Grocery,330.67,271.11,1921,133
+196,Speech Visit,Toys,434.01,272.17,342,49
+197,Floor Fly,Grocery,391.05,323.97,657,112
+198,Dinner Remember,Sports & Outdoors,91.07,76.51,929,80
+199,Law Hospital,Beauty,76.01,62.76,1278,56
+200,Road Order,Books,248.40,134.02,1137,45
+201,Brother Someone,Beauty,256.74,153.37,1580,115
+202,Garden Discussion,Office Supplies,74.50,62.38,1230,91
+203,Close Model,Home & Kitchen,373.36,248.78,900,48
+204,Know Water,Books,131.35,104.52,262,47
+205,Structure Democrat,Sports & Outdoors,187.60,97.20,1274,91
+206,Project Power,Grocery,288.54,140.47,72,5
+207,Full Leave,Beauty,455.47,352.42,1516,14
+208,Result Name,Beauty,175.09,102.78,479,91
+209,Have Wide,Electronics,94.55,60.38,1683,363
+210,Bank Explain,Beauty,331.47,203.93,274,5
+211,Rather Center,Clothing,5.44,2.91,1194,227
+212,Wish Different,Grocery,270.01,224.21,295,45
+213,Meeting State,Home & Kitchen,286.63,185.46,1427,230
+214,Argue Fact,Sports & Outdoors,135.92,70.92,1643,30
+215,Six Most,Sports & Outdoors,242.40,131.53,509,23
+216,Group Hope,Office Supplies,182.30,120.25,21,5
+217,Blood Cut,Toys,223.58,103.19,1947,240
+218,Board Then,Beauty,288.74,187.78,2,5
+219,Sister Doctor,Automotive,334.70,162.93,193,28
+220,Unit Newspaper,Toys,99.62,48.59,511,61
+221,Establish Do,Sports & Outdoors,337.45,277.87,1487,212
+222,Within Section,Toys,79.02,47.10,1218,25
+223,Win Issue,Grocery,443.39,310.22,388,19
+224,Husband Back,Electronics,320.99,208.41,1344,170
+225,Treat Term,Books,416.08,242.78,1347,148
+226,Bag Day,Books,333.37,195.48,1869,339
+227,Here Rock,Sports & Outdoors,223.12,133.66,1824,161
+228,Mr Trip,Toys,279.57,225.72,1210,258
+229,Seem Sometimes,Clothing,74.93,39.60,804,100
+230,Unit Professor,Toys,177.37,129.29,1534,133
+231,Off Ok,Books,430.52,265.58,1609,111
+232,Eye Help,Electronics,438.75,236.87,1819,89
+233,Minute Why,Grocery,472.26,306.69,1188,115
+234,Man Reason,Electronics,422.17,198.53,1712,376
+235,Remember Front,Electronics,226.09,166.06,605,83
+236,Ago Company,Grocery,459.56,372.61,1790,243
+237,Professional Phone,Electronics,361.19,260.82,1924,219
+238,Long That,Beauty,312.97,173.24,527,85
+239,Have Relate,Books,429.86,356.10,824,12
+240,Stage Support,Office Supplies,425.29,215.23,422,5
+241,Power Price,Books,265.71,208.04,1894,103
+242,Offer Someone,Sports & Outdoors,129.00,109.42,579,127
+243,Thousand Play,Books,467.85,255.47,621,150
+244,Account Star,Clothing,469.21,294.71,523,97
+245,Within Assume,Grocery,141.50,94.02,1682,299
+246,Ball Build,Home & Kitchen,220.48,147.62,1313,129
+247,Back Not,Home & Kitchen,314.10,200.96,1695,375
+248,Board Owner,Automotive,364.42,292.42,1742,189
+249,Good Through,Grocery,42.51,19.29,1636,118
+250,Air High,Books,88.62,72.16,92,16
+251,Congress Number,Automotive,267.92,120.57,363,70
+252,Government Without,Automotive,393.42,312.18,1151,14
+253,Operation Word,Toys,445.82,219.79,1658,205
+254,People Drop,Toys,246.40,169.26,1945,154
+255,Seven Today,Electronics,286.70,181.59,149,16
+256,Animal Nor,Toys,206.32,113.58,1500,263
+257,Clearly Blood,Sports & Outdoors,134.78,60.92,121,24
+258,Activity Left,Sports & Outdoors,85.17,60.31,581,98
+259,Parent Available,Electronics,71.61,43.67,1376,192
+260,Return Amount,Books,94.81,71.57,29,6
+261,Move With,Electronics,477.85,355.89,226,13
+262,Mean Wait,Grocery,255.46,140.89,1172,249
+263,Minute People,Home & Kitchen,259.05,216.62,110,17
+264,These On,Home & Kitchen,6.02,3.01,321,66
+265,Without And,Sports & Outdoors,29.98,20.25,516,104
+266,Opportunity Money,Books,125.68,68.39,1162,26
+267,Finish Great,Sports & Outdoors,371.91,272.23,238,11
+268,Involve Either,Clothing,83.11,51.55,1737,221
+269,Face Manager,Books,8.76,5.82,1789,27
+270,Program Public,Beauty,58.89,42.25,753,63
+271,Throughout Edge,Sports & Outdoors,425.43,212.14,650,78
+272,Light Computer,Clothing,285.75,136.46,836,145
+273,Single Ok,Automotive,399.58,308.13,73,6
+274,Education Ask,Electronics,27.29,17.47,108,21
+275,Although Page,Toys,273.03,159.13,113,12
+276,Develop Somebody,Toys,105.79,50.01,57,8
+277,Always Kind,Toys,391.99,319.08,315,23
+278,Dinner Drug,Sports & Outdoors,499.12,309.11,887,209
+279,Open How,Toys,82.15,63.02,1876,318
+280,When Production,Automotive,249.57,124.69,1303,277
+281,Body Laugh,Electronics,68.80,38.96,1735,392
+282,Approach Clear,Electronics,256.69,184.45,1335,95
+283,Class Choice,Beauty,151.34,77.14,1715,275
+284,Little Statement,Books,232.54,105.91,1783,53
+285,Expert Reflect,Grocery,85.27,42.06,1057,18
+286,Class Scene,Home & Kitchen,390.45,209.13,1648,89
+287,Suffer Behavior,Books,42.14,26.00,1750,360
+288,Material On,Grocery,187.09,148.24,312,48
+289,Want Reduce,Toys,239.46,180.25,283,15
+290,Cover Safe,Books,82.03,57.08,1016,77
+291,Management Letter,Automotive,332.34,268.84,1934,394
+292,Writer Baby,Clothing,333.06,241.38,903,66
+293,Thought Art,Electronics,363.88,191.52,1313,192
+294,Soon Heart,Automotive,86.30,45.92,93,15
+295,Run Agree,Beauty,342.12,172.22,1949,478
+296,Those Really,Clothing,260.77,201.56,265,28
+297,Base Sea,Books,104.30,52.68,1914,296
+298,Red Only,Grocery,187.42,158.93,754,104
+299,Stand During,Home & Kitchen,201.17,157.36,793,148
+300,Condition Health,Books,81.43,49.86,293,27
+301,Seat Four,Clothing,118.26,97.89,974,176
+302,Believe Civil,Office Supplies,229.90,132.49,980,17
+303,Beat Democratic,Home & Kitchen,119.78,71.53,1278,172
+304,Serious Resource,Sports & Outdoors,134.73,65.81,1594,361
+305,Offer Dinner,Home & Kitchen,75.95,63.82,957,109
+306,Anyone Movement,Sports & Outdoors,307.57,227.21,931,43
+307,Energy Down,Automotive,83.37,40.49,1987,264
+308,Pretty Visit,Toys,239.61,164.92,1277,92
+309,Daughter Difficult,Grocery,68.98,42.92,1747,264
+310,Work Feeling,Books,303.03,211.49,165,36
+311,Lay Charge,Grocery,178.45,97.79,1453,191
+312,Consider Issue,Toys,79.44,44.14,1435,233
+313,True Enter,Clothing,151.48,98.65,1334,66
+314,Change Environment,Automotive,272.68,197.58,696,140
+315,Action Tax,Sports & Outdoors,462.46,281.86,246,22
+316,Along Sometimes,Toys,83.40,49.03,1979,321
+317,Same Book,Books,448.20,363.33,1162,183
+318,Tend Member,Grocery,188.62,153.62,210,40
+319,Family Take,Toys,114.94,54.62,1350,15
+320,Condition High,Grocery,202.06,119.85,1252,106
+321,Practice Black,Toys,485.64,262.68,1497,107
+322,Father Rock,Home & Kitchen,372.25,246.37,619,96
+323,Everybody Media,Automotive,394.59,302.09,1665,47
+324,Edge Often,Automotive,462.88,242.22,945,64
+325,Deep Space,Home & Kitchen,404.02,331.85,656,77
+326,Doctor Value,Toys,446.61,302.92,96,19
+327,Treat Difference,Toys,136.29,66.60,1315,317
+328,Instead Maybe,Electronics,114.64,55.25,1160,41
+329,Wait Amount,Automotive,305.88,222.90,1262,258
+330,Like Last,Electronics,232.17,168.61,691,75
+331,Commercial Similar,Automotive,396.57,309.26,481,46
+332,Show Nation,Books,344.39,212.74,1951,248
+333,Affect Rest,Beauty,284.20,175.53,391,52
+334,Tv Sort,Sports & Outdoors,252.68,157.85,859,199
+335,Phone Responsibility,Clothing,91.22,54.24,1426,180
+336,Particularly Half,Beauty,173.88,105.65,366,28
+337,Study Involve,Clothing,349.86,241.58,1314,72
+338,After Growth,Automotive,237.39,149.97,1785,68
+339,Certain Tonight,Clothing,214.55,154.58,1771,313
+340,Tell For,Automotive,325.79,192.06,1662,300
+341,Protect Forget,Clothing,113.08,93.52,1759,129
+342,Action Option,Home & Kitchen,456.37,351.38,299,34
+343,Project Find,Beauty,297.75,166.19,1302,202
+344,Modern Them,Clothing,32.09,15.08,584,103
+345,Source Level,Books,377.53,289.02,1611,323
+346,Staff Save,Home & Kitchen,10.14,5.32,249,55
+347,Boy Affect,Clothing,493.97,366.74,1546,344
+348,Although Character,Automotive,205.74,134.09,366,84
+349,Light Grow,Beauty,230.94,114.73,996,127
+350,Since Mission,Beauty,166.51,111.14,1054,44
+351,Open Point,Electronics,92.99,66.34,1467,25
+352,North Window,Automotive,153.54,69.25,335,30
+353,Job Win,Books,139.69,86.38,1603,85
+354,Now Meet,Grocery,410.96,243.42,753,88
+355,Republican Model,Toys,229.23,133.10,125,20
+356,Offer Call,Electronics,295.40,166.97,853,24
+357,Camera Leader,Grocery,25.34,11.51,1091,146
+358,Fast President,Toys,19.90,14.56,1590,182
+359,Appear Car,Toys,245.33,153.94,1641,335
+360,Win Focus,Office Supplies,375.40,184.96,446,92
+361,Style Time,Electronics,455.39,350.34,1224,178
+362,Number Data,Office Supplies,25.35,14.68,606,26
+363,Situation Mr,Clothing,448.23,242.18,315,41
+364,Wife Outside,Clothing,14.99,8.49,1554,144
+365,Least Try,Toys,150.29,105.02,597,139
+366,Hundred Go,Office Supplies,30.58,22.93,130,24
+367,Dark Quickly,Electronics,361.97,255.23,204,41
+368,Indicate Week,Electronics,74.72,35.75,1692,45
+369,Ready Marriage,Sports & Outdoors,494.69,280.80,862,124
+370,Whether Understand,Home & Kitchen,434.24,278.17,1876,249
+371,Instead Dinner,Grocery,426.93,218.93,1780,5
+372,Appear Likely,Grocery,451.42,250.14,1624,132
+373,Community Send,Home & Kitchen,148.88,94.39,727,109
+374,Occur Local,Clothing,54.62,37.94,1414,326
+375,Carry Make,Clothing,227.64,172.30,1050,244
+376,Sometimes State,Clothing,284.47,183.05,1569,127
+377,Hear This,Automotive,492.04,309.86,384,26
+378,Look Prove,Toys,257.71,144.84,838,59
+379,Direction Both,Grocery,235.39,194.63,65,16
+380,Student Onto,Sports & Outdoors,201.20,114.89,989,235
+381,Tree Could,Office Supplies,70.67,48.15,1746,354
+382,Republican Site,Books,225.91,111.51,487,121
+383,Present Both,Home & Kitchen,244.85,138.81,368,72
+384,Traditional South,Automotive,81.68,69.09,707,18
+385,Decide Bad,Office Supplies,456.94,214.45,1716,308
+386,Strategy Door,Office Supplies,350.12,297.02,1038,15
+387,Enjoy Open,Office Supplies,281.15,186.21,1302,241
+388,Hundred Someone,Office Supplies,459.73,228.75,1228,51
+389,As List,Beauty,376.08,236.37,1713,135
+390,Outside Coach,Beauty,95.54,49.25,567,109
+391,Team Value,Grocery,345.96,247.58,306,16
+392,Method Federal,Electronics,267.80,142.63,1207,57
+393,International Simply,Books,111.27,64.35,1312,14
+394,Under Certainly,Home & Kitchen,17.50,11.15,1574,216
+395,Cold Community,Grocery,397.28,207.52,196,42
+396,Central Generation,Clothing,206.80,101.30,237,55
+397,Expect Fish,Home & Kitchen,197.03,122.16,1622,178
+398,How Week,Sports & Outdoors,293.04,151.71,664,60
+399,Suggest Rate,Home & Kitchen,425.17,202.78,1959,252
+400,Tend Employee,Electronics,365.43,247.28,705,134
+401,Present Interesting,Home & Kitchen,236.47,132.56,1463,126
+402,Turn Realize,Toys,243.37,127.69,746,36
+403,Deal Something,Office Supplies,153.89,70.59,1991,298
+404,Religious Wide,Office Supplies,313.90,179.63,1306,272
+405,Practice Safe,Clothing,391.31,314.13,1618,167
+406,Century Hundred,Office Supplies,441.51,287.36,1052,46
+407,Its Other,Books,200.97,110.35,1142,239
+408,Board Plant,Sports & Outdoors,230.52,121.33,938,10
+409,Meet Impact,Electronics,243.60,156.23,1064,63
+410,True Outside,Office Supplies,365.19,261.83,1195,71
+411,Increase Debate,Sports & Outdoors,366.32,274.71,703,141
+412,Deal About,Automotive,217.89,135.00,185,16
+413,Court Support,Books,272.54,159.40,55,12
+414,Field Best,Home & Kitchen,470.38,255.31,1703,274
+415,Former Sort,Automotive,374.18,308.65,1996,156
+416,Same Pressure,Grocery,302.17,143.79,592,53
+417,Option Evening,Clothing,328.63,176.66,1942,154
+418,Team Expect,Grocery,411.03,257.85,1378,228
+419,Perform Lay,Automotive,259.07,162.08,257,31
+420,Low Road,Clothing,262.10,152.70,942,149
+421,People Even,Electronics,430.67,290.11,1946,157
+422,Nor Recently,Automotive,177.64,93.29,64,6
+423,Teacher Story,Grocery,341.29,246.31,889,121
+424,Foreign Local,Toys,392.52,247.52,601,37
+425,Both Vote,Toys,468.58,262.63,1783,371
+426,Share Thus,Electronics,125.82,78.11,155,8
+427,Interest Modern,Clothing,474.17,221.72,182,25
+428,Hot Small,Home & Kitchen,8.70,6.61,1032,43
+429,Impact Page,Office Supplies,468.23,321.17,906,221
+430,Red Few,Clothing,461.64,227.13,159,18
+431,South Mrs,Electronics,134.43,73.86,1838,34
+432,Him Pull,Books,259.87,121.63,900,79
+433,Last Follow,Toys,299.60,242.95,15,5
+434,Rate Option,Office Supplies,312.26,243.78,1839,256
+435,Enjoy Strong,Toys,237.36,188.88,1471,21
+436,Should After,Beauty,229.61,147.51,894,93
+437,Phone Strong,Beauty,413.98,218.66,8,5
+438,Move Most,Books,454.83,347.15,1650,403
+439,Plan Soldier,Books,203.06,123.35,1388,27
+440,Arm Oil,Toys,379.19,246.91,847,69
+441,Beat General,Electronics,189.62,161.11,1306,151
+442,From Area,Books,11.47,7.22,510,29
+443,Red Hundred,Toys,294.54,232.90,680,40
+444,Size Finally,Toys,25.19,14.86,1633,157
+445,Artist Team,Books,337.15,229.46,379,6
+446,Defense Dinner,Sports & Outdoors,134.33,85.22,581,63
+447,Recent Set,Automotive,462.30,269.27,1211,178
+448,Third Hear,Books,251.30,141.02,1320,202
+449,Rather Identify,Electronics,135.00,113.08,959,221
+450,Rest Common,Sports & Outdoors,167.00,108.52,542,93
+451,Late Would,Books,280.31,224.13,829,29
+452,Spend Father,Beauty,232.27,143.06,269,35
+453,Resource Question,Home & Kitchen,285.98,182.85,348,80
+454,Anyone No,Electronics,109.45,60.02,1098,59
+455,Head Scientist,Sports & Outdoors,183.45,99.48,1939,282
+456,We Over,Clothing,14.96,8.67,458,103
+457,Grow From,Office Supplies,32.51,16.80,1176,279
+458,Believe Firm,Automotive,6.88,5.21,1608,332
+459,Some Somebody,Beauty,444.75,208.03,1033,114
+460,Plan Hit,Books,321.29,160.65,523,115
+461,Look Certainly,Office Supplies,401.83,208.29,1804,252
+462,Purpose Rich,Toys,332.15,193.43,880,172
+463,Cold Option,Clothing,446.76,326.74,679,140
+464,Black Human,Beauty,245.21,121.29,494,43
+465,Already Simply,Grocery,31.15,20.93,189,14
+466,Garden Pressure,Books,41.50,21.31,1621,391
+467,Though Kind,Office Supplies,157.92,82.36,680,15
+468,Answer Garden,Office Supplies,73.92,55.75,1944,49
+469,Chair If,Office Supplies,178.45,95.23,283,48
+470,Line Base,Electronics,366.78,290.27,615,122
+471,Usually Keep,Clothing,184.61,120.36,1634,198
+472,Perhaps Magazine,Sports & Outdoors,355.76,248.39,1769,273
+473,Low Old,Grocery,17.17,10.80,22,5
+474,Simple Successful,Beauty,25.73,19.85,1270,133
+475,World Avoid,Grocery,94.33,78.14,861,152
+476,Pick Model,Beauty,449.23,218.58,1651,209
+477,In Lose,Automotive,394.85,311.79,339,72
+478,Should Type,Office Supplies,345.15,228.82,392,28
+479,Responsibility Someone,Toys,492.34,323.88,452,105
+480,Discussion Campaign,Toys,235.86,139.68,1073,37
+481,Fly Official,Sports & Outdoors,476.22,371.92,1125,184
+482,Best Clearly,Office Supplies,19.71,12.95,728,157
+483,Evidence Strategy,Beauty,161.86,101.00,116,23
+484,Middle Woman,Beauty,111.08,62.95,601,127
+485,The Perhaps,Electronics,151.41,70.59,1880,36
+486,Hotel Very,Sports & Outdoors,361.47,306.96,275,39
+487,Term Last,Clothing,292.72,154.42,1969,149
+488,Amount Garden,Beauty,469.24,247.51,357,84
+489,Religious Trade,Grocery,19.79,12.56,1604,91
+490,Affect Rock,Electronics,437.12,234.84,1151,22
+491,Clear Threat,Automotive,484.05,332.93,1970,114
+492,Any Individual,Toys,468.21,368.45,1323,67
+493,Within Great,Sports & Outdoors,354.52,286.04,82,19
+494,At Forward,Clothing,374.94,229.48,332,14
+495,Local Watch,Beauty,201.90,169.59,1871,184
+496,Chair Support,Toys,291.53,192.86,679,40
+497,Ago Couple,Toys,284.23,234.52,1790,26
+498,Enter Radio,Clothing,155.23,93.50,1299,254
+499,Republican Budget,Beauty,151.80,112.19,222,42
+500,Too Thought,Office Supplies,146.21,79.71,682,116

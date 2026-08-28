@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Spark / Databricks local
+spark-warehouse/
+metastore_db/
+derby.log
+
+# Secrets
+.env
+*.pem
+credentials.json
