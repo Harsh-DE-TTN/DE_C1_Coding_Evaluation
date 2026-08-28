@@ -65,7 +65,11 @@ databricks-medallion-pipeline/
 
 ---
 
+
+
 ## Quick start
+
+
 
 ### 1. Generate sample data (local)
 
@@ -74,6 +78,8 @@ python3 -m pip install faker pandas
 python3 src/data_generation/generate_sample_data.py
 ```
 
+
+
 ### 2. Upload CSVs to Databricks
 
 Upload `data/*.csv` to your ingest path and set:
@@ -81,6 +87,8 @@ Upload `data/*.csv` to your ingest path and set:
 ```bash
 export BRONZE_INPUT_PATH="/Volumes/<catalog>/<schema>/<volume>/data"
 ```
+
+
 
 ### 3. Create schemas
 
@@ -125,30 +133,52 @@ Use queries from `src/dashboard/dashboard_queries.sql` in Databricks SQL Editor.
 
 ---
 
+
+
 ## Configuration
 
-| Variable | Default | Layer |
-| -------- | ------- | ----- |
-| `BRONZE_INPUT_PATH` | *(required)* | Bronze |
-| `BRONZE_DATABASE` | `bronze` | Bronze |
-| `SILVER_DATABASE` | `silver` | Silver |
-| `GOLD_DATABASE` | `gold` | Gold |
-| `GOLD_HIGH_VALUE_REVENUE_THRESHOLD` | `5000.00` | Gold |
+
+| Variable                            | Default      | Layer  |
+| ----------------------------------- | ------------ | ------ |
+| `BRONZE_INPUT_PATH`                 | *(required)* | Bronze |
+| `BRONZE_DATABASE`                   | `bronze`     | Bronze |
+| `SILVER_DATABASE`                   | `silver`     | Silver |
+| `GOLD_DATABASE`                     | `gold`       | Gold   |
+| `GOLD_HIGH_VALUE_REVENUE_THRESHOLD` | `5000.00`    | Gold   |
+
 
 ---
+
+
 
 ## Documentation
 
-| Document | Purpose |
-| -------- | ------- |
-| [design-notes.md](design-notes.md) | Architecture summary |
-| [data-model.md](data-model.md) | Source → Bronze → Silver → Gold |
-| [data-quality-strategy.md](data-quality-strategy.md) | DQ checks and thresholds |
-| [ai-prompts/documentation.md](ai-prompts/documentation.md) | **Full prompt history** |
-| [database/setup-notes.md](database/setup-notes.md) | Databricks setup |
+
+| Document                                                   | Purpose                         |
+| ---------------------------------------------------------- | ------------------------------- |
+| [design-notes.md](design-notes.md)                         | Architecture summary            |
+| [data-model.md](data-model.md)                             | Source → Bronze → Silver → Gold |
+| [data-quality-strategy.md](data-quality-strategy.md)       | DQ checks and thresholds        |
+| [ai-prompts/documentation.md](ai-prompts/documentation.md) | **Full prompt history**         |
+| [database/setup-notes.md](database/setup-notes.md)         | Databricks setup                |
+
 
 ---
+
+
 
 ## License / attribution
 
 AI Capability Exercise submission — see `candidate-info.md`.
+
+---
+
+## Screenshots
+
+### Data in Databricks
+
+![Data in Databricks](data_in_databricks.png)
+
+### Dashboard
+
+![Dashboard](dashboard.png)
