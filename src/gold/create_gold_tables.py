@@ -13,11 +13,27 @@ Silver rejected tables and Bronze are never used.
 
 from __future__ import annotations
 
+import os
 import sys
 from datetime import datetime
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
+_src = os.environ.get("PIPELINE_SRC_ROOT")
+if _src:
+    root = Path(_src).resolve()
+elif sys.path and sys.path[0]:
+    p0 = Path(sys.path[0]).resolve()
+    root = p0.parent if p0.name == "gold" and (p0.parent / "silver").is_dir() else p0
+else:
+    try:
+        root = Path(__file__).resolve().parent.parent
+    except NameError:
+        raise RuntimeError("Set PIPELINE_SRC_ROOT='/Workspace/Repos/<user>/<repo>/src'") from None
+
+for entry in (root, root / "gold"):
+    s = str(entry)
+    if s not in sys.path:
+        sys.path.insert(0, s)
 
 import logging
 import os
@@ -49,7 +65,26 @@ QUALIFYING_ORDER_STATUS = os.environ.get("GOLD_QUALIFYING_ORDER_STATUS", "Comple
 # High-Value segment threshold (total completed-order revenue per customer).
 HIGH_VALUE_REVENUE_THRESHOLD = float(os.environ.get("GOLD_HIGH_VALUE_REVENUE_THRESHOLD", "5000.00"))
 
-GOLD_SQL_DIR = Path(__file__).resolve().parent
+GOLD_SQL_DIR = Path(os.environ.get("PIPELINE_SRC_ROOT", "")).resolve() / "gold" if os.environ.get(
+    "PIPELINE_SRC_ROOT"
+) else None
+
+
+def _gold_sql_dir() -> Path:
+    if GOLD_SQL_DIR and GOLD_SQL_DIR.is_dir():
+        return GOLD_SQL_DIR
+    try:
+        return Path(__file__).resolve().parent
+    except NameError:
+        if sys.path and sys.path[0]:
+            p0 = Path(sys.path[0]).resolve()
+            if p0.name == "gold":
+                return p0
+            if (p0 / "gold").is_dir():
+                return p0 / "gold"
+            if (p0.parent / "gold").is_dir():
+                return p0.parent / "gold"
+        raise RuntimeError("Set PIPELINE_SRC_ROOT='/Workspace/Repos/<user>/<repo>/src'") from None
 
 LOGGER = logging.getLogger("gold_create")
 
@@ -80,7 +115,7 @@ def ensure_gold_database(spark: SparkSession) -> None:
 
 
 def load_sql(filename: str) -> str:
-    path = GOLD_SQL_DIR / filename
+    path = _gold_sql_dir() / filename
     if not path.exists():
         raise FileNotFoundError(f"Gold SQL file not found: {path}")
     return path.read_text(encoding="utf-8")

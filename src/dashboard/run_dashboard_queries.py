@@ -19,9 +19,28 @@ from pyspark.sql import SparkSession
 
 LOGGER = logging.getLogger("dashboard_queries")
 
-DASHBOARD_SQL_FILE = Path(__file__).resolve().parent / "dashboard_queries.sql"
 GOLD_DATABASE = os.environ.get("GOLD_DATABASE", "gold")
 MATERIALIZE = os.environ.get("DASHBOARD_MATERIALIZE", "false").lower() in ("1", "true", "yes")
+
+
+def _dashboard_sql_file() -> Path:
+    src = os.environ.get("PIPELINE_SRC_ROOT")
+    if src:
+        path = Path(src).resolve() / "dashboard" / "dashboard_queries.sql"
+        if path.is_file():
+            return path
+    try:
+        return Path(__file__).resolve().parent / "dashboard_queries.sql"
+    except NameError:
+        if sys.path and sys.path[0]:
+            p0 = Path(sys.path[0]).resolve()
+            if p0.name == "dashboard":
+                return p0 / "dashboard_queries.sql"
+            if (p0 / "dashboard" / "dashboard_queries.sql").is_file():
+                return p0 / "dashboard" / "dashboard_queries.sql"
+            if (p0.parent / "dashboard" / "dashboard_queries.sql").is_file():
+                return p0.parent / "dashboard" / "dashboard_queries.sql"
+        raise RuntimeError("Set PIPELINE_SRC_ROOT='/Workspace/Repos/<user>/<repo>/src'") from None
 
 QUERY_TABLE_MAP = {
     "top_products_by_revenue": "dashboard_top_products",
@@ -96,7 +115,7 @@ def run_dashboard_queries() -> int:
     LOGGER.info("START Dashboard query stage | materialize=%s", MATERIALIZE)
 
     try:
-        queries = parse_dashboard_queries(DASHBOARD_SQL_FILE)
+        queries = parse_dashboard_queries(_dashboard_sql_file())
         results_summary: list[tuple[str, int, str]] = []
 
         for name, sql in queries:
