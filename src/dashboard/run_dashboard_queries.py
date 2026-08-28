@@ -44,9 +44,8 @@ def _dashboard_sql_file() -> Path:
 
 QUERY_TABLE_MAP = {
     "top_products_by_revenue": "dashboard_top_products",
-    "revenue_trend_daily": "dashboard_revenue_trend",
-    "customer_segmentation_mix": "dashboard_segmentation_mix",
-    "revenue_by_customer_segment": "dashboard_revenue_by_segment",
+    "customer_segmentation_mix_behavioral": "dashboard_segmentation_mix",
+    "revenue_by_customer_segment_premium_standard_basic": "dashboard_revenue_by_segment",
     "kpi_summary": "dashboard_kpi_summary",
 }
 

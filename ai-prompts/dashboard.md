@@ -29,15 +29,14 @@
 
 ### AI RESPONSE SUMMARY
 
-Created `src/dashboard/dashboard_queries.sql` with 5 queries (+ optional weekly trend variant):
+Created `src/dashboard/dashboard_queries.sql` with 4 queries:
 
 | Query | Visualization | Source |
 | ----- | ------------- | ------ |
 | Top products by revenue | Bar chart | `sales_by_product` |
-| Revenue trend daily | Line chart | `daily_weekly_trends` |
 | Customer segmentation mix | Pie/Donut | `customer_segmentation` |
 | Revenue by customer segment | Bar chart | `revenue_by_customer` |
-| KPI summary | KPI cards | Multiple Gold tables |
+| KPI summary | KPI cards | `sales_by_product`, `revenue_by_customer` |
 
 Also added `src/dashboard/DASHBOARD_GUIDE.md` for usage notes.
 
@@ -47,14 +46,14 @@ Also added `src/dashboard/DASHBOARD_GUIDE.md` for usage notes.
 
 - Gold-only queries with schema validation notes at file bottom
 - Query index table documenting visualization and business question
-- KPI uses daily trends for global revenue/orders (avoids double-count)
+- KPI uses `revenue_by_customer` for global revenue/orders (one row per customer)
 - Query 4 correctly uses `customer_segment` (Premium/Standard/Basic) vs Query 3 behavioral segments
 - NULL-safe COALESCE throughout; LIMIT 10 for Top products
 
 **△ Assumptions:**
 
 - `gold` schema name (override catalog/schema in Databricks if different)
-- KPI totals from `daily_weekly_trends` day grain, not sum of customer orders
+- KPI totals from `revenue_by_customer`, not daily trends (removed from project)
 
 **FINAL DECISION:** Dashboard SQL layer complete; UI not implemented
 

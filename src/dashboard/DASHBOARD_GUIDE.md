@@ -15,19 +15,18 @@ SQL queries for Databricks SQL Dashboard visualizations. Reads **Gold tables onl
 | # | Query | Visualization | Gold table(s) |
 | - | ----- | ------------- | ------------- |
 | 1 | Top products by revenue | Bar chart | `gold.sales_by_product` |
-| 2 | Revenue trend (daily) | Line chart | `gold.daily_weekly_trends` |
-| 3 | Customer segmentation mix | Pie / Donut | `gold.customer_segmentation` |
-| 4 | Revenue by customer segment | Bar chart | `gold.revenue_by_customer` |
-| 5 | KPI summary | KPI cards | Multiple Gold tables |
+| 2 | Customer segmentation mix | Pie / Donut | `gold.customer_segmentation` |
+| 3 | Revenue by customer segment | Bar chart | `gold.revenue_by_customer` |
+| 4 | KPI summary | KPI cards | `gold.sales_by_product`, `gold.revenue_by_customer` |
 
 ---
 
 ## Assumptions
 
 1. Gold metrics reflect **Completed orders only** (enforced in Gold layer).
-2. Query 3 uses **behavioral** segments (High-Value, Repeat, One-Time, Inactive).
-3. Query 4 uses **source** `customer_segment` (Premium, Standard, Basic) — a different dimension.
-4. KPI revenue/orders aggregate from `daily_weekly_trends` at **day** grain to avoid double-counting.
+2. Query 2 uses **behavioral** segments (High-Value, Repeat, One-Time, Inactive).
+3. Query 3 uses **source** `customer_segment` (Premium, Standard, Basic) — a different dimension.
+4. KPI totals aggregate from `gold.revenue_by_customer` (one row per customer).
 5. No Bronze or Silver tables are queried from the dashboard layer.
 
 ---
@@ -51,6 +50,6 @@ Set `DASHBOARD_MATERIALIZE=true` to persist results as `gold.dashboard_*` tables
 
 ---
 
-## Related documentation
+## Related
 
 - [data-quality-strategy.md](../../data-quality-strategy.md) — Gold revenue rules and segment logic
