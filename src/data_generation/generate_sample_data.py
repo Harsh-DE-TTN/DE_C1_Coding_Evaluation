@@ -70,7 +70,13 @@ def resolve_output_dir() -> Path:
         value = os.environ.get(key)
         if value:
             return Path(value)
-    return DEFAULT_DATA_DIR
+    try:
+        return Path(__file__).resolve().parents[2] / "data"
+    except NameError:
+        src = os.environ.get("PIPELINE_SRC_ROOT")
+        if src:
+            return Path(src).resolve().parent / "data"
+        return Path.cwd() / "data"
 
 
 DATA_DIR = DEFAULT_DATA_DIR

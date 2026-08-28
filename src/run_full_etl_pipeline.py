@@ -29,12 +29,25 @@ from datetime import datetime
 from pathlib import Path
 from typing import Callable
 
-SRC_ROOT = Path(__file__).resolve().parent
-sys.path.insert(0, str(SRC_ROOT / "data_generation"))
-sys.path.insert(0, str(SRC_ROOT / "bronze"))
-sys.path.insert(0, str(SRC_ROOT / "silver"))
-sys.path.insert(0, str(SRC_ROOT / "gold"))
-sys.path.insert(0, str(SRC_ROOT / "dashboard"))
+# Bootstrap src/ on sys.path before layer imports (Databricks %run safe).
+_src = os.environ.get("PIPELINE_SRC_ROOT")
+if _src:
+    _bootstrap = str(Path(_src).resolve())
+    if _bootstrap not in sys.path:
+        sys.path.insert(0, _bootstrap)
+elif not any(
+    Path(p).resolve().joinpath("pipeline_paths.py").is_file() for p in sys.path if p
+):
+    if sys.path and sys.path[0]:
+        _p0 = Path(sys.path[0]).resolve()
+        if (_p0 / "pipeline_paths.py").is_file():
+            sys.path.insert(0, str(_p0))
+        elif (_p0.parent / "pipeline_paths.py").is_file():
+            sys.path.insert(0, str(_p0.parent))
+
+from pipeline_paths import configure_layer_paths  # noqa: E402
+
+configure_layer_paths("data_generation", "bronze", "silver", "gold", "dashboard")
 
 from generate_sample_data import resolve_output_dir, run_data_generation  # noqa: E402
 from ingest_all import run_ingest  # noqa: E402
