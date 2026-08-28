@@ -67,9 +67,6 @@ COMMENT 'Business-ready aggregations for analytics and dashboards';
 --   customer_id, customer_name, customer_segment, total_orders, total_revenue,
 --   avg_order_value, lifetime_value_actual
 
--- gold.daily_weekly_trends
---   period_type ('day'|'week'), period_start, total_orders, total_revenue, avg_order_value
-
 -- gold.customer_segmentation
 --   segment_type (High-Value|Repeat|One-Time|Inactive),
 --   customer_count, avg_revenue, total_revenue

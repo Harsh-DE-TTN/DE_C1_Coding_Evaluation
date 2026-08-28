@@ -5,8 +5,7 @@ Gold layer utilities and orchestration: Silver PASS tables → business-ready De
 Execution order:
   1. sales_by_product
   2. revenue_by_customer
-  3. daily_weekly_trends
-  4. customer_segmentation (reads revenue_by_customer)
+  3. customer_segmentation (reads revenue_by_customer)
 
 Silver rejected tables and Bronze are never used.
 """
@@ -56,7 +55,6 @@ SILVER_PRODUCTS_TABLE = f"{SILVER_DATABASE}.silver_products"
 
 GOLD_SALES_BY_PRODUCT_TABLE = f"{GOLD_DATABASE}.sales_by_product"
 GOLD_REVENUE_BY_CUSTOMER_TABLE = f"{GOLD_DATABASE}.revenue_by_customer"
-GOLD_DAILY_WEEKLY_TRENDS_TABLE = f"{GOLD_DATABASE}.daily_weekly_trends"
 GOLD_CUSTOMER_SEGMENTATION_TABLE = f"{GOLD_DATABASE}.customer_segmentation"
 
 # Business rule: only Completed orders contribute to Gold revenue metrics.
@@ -205,23 +203,6 @@ def validate_gold_tables(spark: SparkSession) -> list[GoldValidationResult]:
         )
     )
 
-    trends_revenue = float(
-        spark.table(GOLD_DAILY_WEEKLY_TRENDS_TABLE)
-        .filter(F.col("period_type") == "day")
-        .agg(F.sum("total_revenue").alias("v"))
-        .collect()[0]["v"]
-        or 0.0
-    )
-    results.append(
-        GoldValidationResult(
-            "daily_trends_revenue_reconciliation",
-            silver_revenue,
-            trends_revenue,
-            abs(silver_revenue - trends_revenue) < 0.01,
-            "SUM(daily_weekly_trends day revenue) vs Silver Completed orders",
-        )
-    )
-
     seg_customers = spark.table(GOLD_CUSTOMER_SEGMENTATION_TABLE).agg(
         F.sum("customer_count").alias("c")
     ).collect()[0]["c"]
@@ -259,7 +240,6 @@ def print_gold_summary(spark: SparkSession, validation_ts: datetime, results: li
     counts = {
         "sales_by_product": spark.table(GOLD_SALES_BY_PRODUCT_TABLE).count(),
         "revenue_by_customer": spark.table(GOLD_REVENUE_BY_CUSTOMER_TABLE).count(),
-        "daily_weekly_trends": spark.table(GOLD_DAILY_WEEKLY_TRENDS_TABLE).count(),
         "customer_segmentation": spark.table(GOLD_CUSTOMER_SEGMENTATION_TABLE).count(),
     }
     print("=" * 50)
@@ -282,8 +262,7 @@ def print_gold_summary(spark: SparkSession, validation_ts: datetime, results: li
 SQL_PIPELINE = (
     "01_sales_by_product.sql",
     "02_revenue_by_customer.sql",
-    "03_daily_weekly_trends.sql",
-    "04_customer_segmentation.sql",
+    "03_customer_segmentation.sql",
 )
 
 
@@ -306,7 +285,6 @@ def run_gold_pipeline() -> int:
         for table in (
             GOLD_SALES_BY_PRODUCT_TABLE,
             GOLD_REVENUE_BY_CUSTOMER_TABLE,
-            GOLD_DAILY_WEEKLY_TRENDS_TABLE,
             GOLD_CUSTOMER_SEGMENTATION_TABLE,
         ):
             count = spark.table(table).count()

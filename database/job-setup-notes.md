@@ -19,7 +19,7 @@ Data Generation → Bronze → Silver → Gold → Dashboard Queries
 | 3 | Bronze Orders | `02_ingest_orders.py` | `bronze.bronze_orders` |
 | 4 | Bronze Products | `03_ingest_products.py` | `bronze.bronze_products` |
 | 5 | Silver Validate | `create_silver_tables.py` | `silver.silver_*`, `*_rejected`, `data_quality_report` |
-| 6 | Gold Aggregate | `create_gold_tables.py` | `gold.sales_by_product`, etc. |
+| 6 | Gold Aggregate | `create_gold_tables.py` | `gold.sales_by_product`, `gold.revenue_by_customer`, `gold.customer_segmentation` |
 | 7 | Dashboard | `run_dashboard_queries.py` | Query results (temp views or `gold.dashboard_*`) |
 
 ---

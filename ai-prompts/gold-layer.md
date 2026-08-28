@@ -41,7 +41,7 @@
 Implemented Gold layer:
 
 - `src/gold/gold_common.py` — config, SQL loader, reconciliation validation
-- `src/gold/01_sales_by_product.sql` through `04_customer_segmentation.sql`
+- `src/gold/01_sales_by_product.sql` through `03_customer_segmentation.sql`
 - `src/gold/create_gold_tables.py` — orchestrator with post-run validation
 - `src/gold/GOLD_LAYER.md` — documentation
 - `tests/gold/test_gold_validation.py` — 6 aggregation/segmentation tests

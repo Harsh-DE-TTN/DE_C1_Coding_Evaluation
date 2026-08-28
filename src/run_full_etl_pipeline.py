@@ -157,7 +157,7 @@ def run_full_etl_pipeline() -> int:
         f"  CSVs:     {data_dir}\n"
         "  Bronze:   bronze.bronze_*\n"
         "  Silver:   silver.silver_*, silver.data_quality_report\n"
-        "  Gold:     gold.sales_by_product, gold.revenue_by_customer, ...\n"
+        "  Gold:     gold.sales_by_product, gold.revenue_by_customer, gold.customer_segmentation\n"
         "  Dashboard: queries executed (set DASHBOARD_MATERIALIZE=true to persist gold.dashboard_*)\n"
     )
     return 0

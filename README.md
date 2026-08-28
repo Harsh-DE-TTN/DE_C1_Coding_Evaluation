@@ -33,8 +33,7 @@ databricks-medallion-pipeline/
 │   ├── gold/
 │   │   ├── 01_sales_by_product.sql
 │   │   ├── 02_revenue_by_customer.sql
-│   │   ├── 03_daily_weekly_trends.sql
-│   │   ├── 04_customer_segmentation.sql
+│   │   └── 03_customer_segmentation.sql
 │   │   └── create_gold_tables.py
 │   └── dashboard/
 │       ├── dashboard_queries.sql

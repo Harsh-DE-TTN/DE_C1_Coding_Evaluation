@@ -47,11 +47,10 @@ Three source entities with FK relationships:
 ## Gold Layer Design
 
 - **Location:** `src/gold/` (shared utilities in `create_gold_tables.py`)
-- **Four aggregations:**
-  1. `sales_by_product` — revenue and order counts per product
-  2. `revenue_by_customer` — spend per customer with segment
-  3. `daily_weekly_trends` — day/week rollups
-  4. `customer_segmentation` — High-Value / Repeat / One-Time / Inactive
+- **Three aggregations:**
+  1. `sales_by_product` — product_id, product_name, category, total_orders, total_revenue, avg_order_value
+  2. `revenue_by_customer` — customer_id, customer_name, customer_segment, total_orders, total_revenue, avg_order_value, lifetime_value_actual
+  3. `customer_segmentation` — segment_type (High-Value/Repeat/One-Time/Inactive), customer_count, avg_revenue, total_revenue
 - **Revenue rule:** only `order_status = 'Completed'` orders count toward revenue
 - **High-Value threshold:** `$5,000` total revenue (configurable via env)
 
