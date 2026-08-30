@@ -267,12 +267,6 @@ def print_silver_summary(
 
 # --- Completeness checks ---
 
-om __future__ import annotations
-
-from datetime import datetime
-
-from pyspark.sql import DataFrame
-from pyspark.sql import functions as F
 
 CUSTOMER_CHECKS = ["CUSTOMER_ID_NULL", "CUSTOMER_EMAIL_NULL"]
 ORDER_CHECKS = ["ORDER_CUSTOMER_ID_NULL", "ORDER_PRODUCT_ID_NULL"]
